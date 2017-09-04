@@ -1,0 +1,128 @@
+header {
+  height: 100vh;
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+.header-img {
+  margin-top: 20rem;
+  margin-left: 3rem;
+}
+.header-form {
+  margin-top: 9rem;
+  width: 80%;
+}
+.header-thx {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 40rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.form-block {
+  margin-top: 6rem;
+  background-color: #fff;
+  height: 87vh;
+}
+.form-block_box {
+  margin-top: 10rem;
+}
+.form-block_text {
+  margin-right: 12rem;
+}
+.form-block_text h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+.form-block_text p {
+  font-size: 17px;
+}
+.form-signin {
+  margin-right: 38rem;
+  margin-top: 4rem;
+}
+.form-signin a {
+  color: #f69a7a;
+}
+.form-signin a:hover {
+  text-decoration: none;
+  color: #f69a7a;
+}
+.form-control {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #888888;
+  border-radius: 0;
+  height: 6rem;
+}
+.form-control:hover {
+  text-decoration: none;
+  box-shadow: none;
+  border-color: #000;
+}
+.form-nick {
+  background: url(../img/nick.png) no-repeat left;
+  padding-left: 2.7rem;
+}
+.form-email {
+  background: url(../img/email.png) no-repeat left;
+  padding-left: 2.7rem;
+}
+.form-pass {
+  background: url(../img/pass.png) no-repeat left;
+  padding-left: 2.7rem;
+}
+.btn {
+  margin-top: 5rem;
+  padding: 2rem 6rem 2rem 6rem;
+  border-radius: 50px;
+  background-color: #82c5c3;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: #82c5c3;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.error {
+  border-bottom: 1px solid red;
+}
+label.error {
+  border: none;
+  color: red;
+}
+@media (max-width: 1200px) {
+  .form-signin {
+    margin: 0;
+    margin-right: 10rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .header-img {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+  .header-form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .form-block_text {
+    margin: 0;
+  }
+  .form-signin {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .form-block {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+}

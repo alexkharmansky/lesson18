@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Ubuntu&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+  	<header>
+  		<div class="container">
+  			<div class="row">
+  				<div class="form-block">
+  					<div class="col-lg-6 col-md-6 col-sm-12 text-center">
+  						<img src="img/img.png" alt="" class="header-img">
+  					</div>
+  					<div class="col-lg-6 col-md-6 col-sm-12 text-center">
+	  					<div class="form-block_box">
+	  						<div class="form-block_text">
+		  						<h3>Сохрани свой аккаунт</h3>
+		  						<p>Получи бесплатно неограниченное количество<br>форм, вопросов и ответов.</p>
+	  						</div>
+	  						<form id="form" class="header-form" action="thanks.html">
+	  							<input type="text" class="form-control form-nick" id="input-nick" name="nick" placeholder="Имя или никнейм">
+	  							<br>
+	  							<input type="text" class="form-control form-email" id="input-email" name="email" placeholder="Email">
+	  							<br>
+	  							<input type="password" class="form-control form-pass" id="input-pass" name="pass" placeholder="Пароль">
+	  							<br>
+	  							<button type="submit" class="btn btn-primary form-btn">Сохранить <img src="img/btn.png" alt=""></button>
+	  						</form>
+	  					</div>
+	  					<p class="form-signin">Уже есть аккаунт? <a href="#">Войти</a></p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</header>
+
+  	<script src="js/jquery-1.12.4.min.js"></script>
+  	<script src="js/jquery.validate.min.js"></script>
+  	<script>
+  		$('#form').validate({
+  			rules: {
+  				nick: {
+  					required: true,
+  					minlength: 2
+  				},
+  				email: {
+  					required: true,
+  					minlength: 3,
+  					email: true
+  				},
+  				pass: {
+  					required: true,
+  					minlength: 3,
+  				}
+  			},
+  			messages: {
+  				nick: {
+  					required: 'Это поле обязательно!',
+  					minlength: 'Введите не менее двух символов!'
+  				},
+  				email: {
+  					required: 'Это поле обязательно!',
+  					minlength: 'Введите не менее трёх символов!',
+  					email: 'Введите корректный email!'
+  				},
+  				pass: {
+  					required: 'Это поле обязательно!',
+  					minlength: 'Введите не менее трёх символов!'
+  				}
+  			}
+  		});
+  	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
